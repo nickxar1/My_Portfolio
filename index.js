@@ -47,11 +47,7 @@ function App() {
 const rootElement = document.getElementById('root');
 if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
+  root.render(<App />);
 } else {
   console.error("Could not find <div id='root'> in index.html");
 }
