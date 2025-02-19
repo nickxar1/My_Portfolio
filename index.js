@@ -1,9 +1,3 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom/client';
-import './App.css'; // Ensure this file exists, or remove this line
-import { FaChevronRight, FaChevronDown, FaBook, FaGithub, FaSearch, FaSun, FaMoon, FaThumbsUp, FaThumbsDown, FaMeh } from 'react-icons/fa';
-import { BsTerminal } from 'react-icons/bs';
-
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   
