@@ -190,4 +190,11 @@ function App() {
   );
 }
 
-export default App;
+// Mount React directly onto the <body> element
+const root = ReactDOM.createRoot(document.body);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+//export default App;
