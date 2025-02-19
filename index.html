@@ -3,16 +3,28 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="App.css" />
     <title>React App</title>
 </head>
 <body>
-	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <div id="root"></div>  <!-- React will mount here -->
+
+    <!-- Load React (Development Mode for Debugging) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-	<script type="text/babel">
-	  ReactDOM.render()
-	</script>    
-	<div id="root"></div>
+	<div id="root"></div> <!-- React will mount here -->
+    <script src="index.js"></script> <!-- Load index.js -->
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+</head>
+<body>
+    <div id="root"></div> <!-- React will mount here -->
+    <script src="index.js"></script> <!-- Load index.js -->
 </body>
 </html>
