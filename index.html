@@ -3,98 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Webpage</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ready Player Me - Unreal Engine 5 samples</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark">
+<body>
+    <!-- Header -->
     <header class="header">
-        <div class="header-left">
-            <img src="https://docs.readyplayer.me/img/rpm-logo.png" alt="Ready Player Me Logo" class="logo">
+        <img src="/api/placeholder/128/32" alt="Ready Player Me" class="logo">
+        <div class="nav-links">
+            <a href="#">Website</a>
+            <a href="#">Blog</a>
+            <a href="#">Forums</a>
+            <a href="#">Sign up</a>
         </div>
-        <div class="header-right">
-            <a href="#" class="nav-link">Website</a>
-            <a href="#" class="nav-link">Blog</a>
-            <a href="#" class="nav-link">Forums</a>
-            <div class="dropdown">
-                <button class="dropdown-btn">Sign up <i class="fas fa-chevron-down"></i></button>
-            </div>
-            <div class="search-container">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" placeholder="Ask or search..." class="search-input">
-                <span class="shortcut">Ctrl + K</span>
-            </div>
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Ask or search...">
+            <span class="search-shortcut">Ctrl + K</span>
         </div>
     </header>
 
-    <div class="content-wrapper">
+    <!-- Main container -->
+    <div class="container">
+        <!-- Sidebar -->
         <aside class="sidebar">
-            <nav class="sidebar-nav">
-                <div class="sidebar-section">
-                    <a href="#" class="sidebar-link">Welcome</a>
-                    <a href="#" class="sidebar-link">How Ready Player Me works</a>
-                    <a href="#" class="sidebar-link">FAQ</a>
-                </div>
-
-                <div class="sidebar-section">
-                    <div class="sidebar-header">
-                        <i class="fas fa-book sidebar-icon"></i>
-                        <span>INTEGRATION GUIDES</span>
-                    </div>
-                    <a href="#" class="sidebar-link">Overview</a>
-
-                    <div class="sidebar-group">
-                        <div class="sidebar-group-header">
-                            <span>Unity</span>
-                            <i class="fas fa-chevron-right sidebar-arrow"></i>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-group">
-                        <div class="sidebar-group-header">
-                            <span>Unreal Engine</span>
-                            <i class="fas fa-chevron-down sidebar-arrow"></i>
-                        </div>
-                        <div class="sidebar-sublinks">
-                            <a href="#" class="sidebar-link sidebar-sublink">Quickstart <i class="fas fa-chevron-right"></i></a>
-                            <a href="#" class="sidebar-link sidebar-sublink">Avatar Creator Integration <i class="fas fa-chevron-right"></i></a>
-                            <a href="#" class="sidebar-link sidebar-sublink">Load Avatars</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </aside>
-
-        <main class="main-content">
-            <div class="breadcrumbs">
-                <i class="fas fa-book breadcrumb-icon"></i>
-                <a href="#" class="breadcrumb-link">INTEGRATION GUIDES</a>
-                <i class="fas fa-chevron-right breadcrumb-separator"></i>
-                <a href="#" class="breadcrumb-link">UNREAL ENGINE</a>
-                <i class="fas fa-chevron-right breadcrumb-separator"></i>
-                <span class="breadcrumb-current">CODE SAMPLES</span>
+            <div class="sidebar-section">
+                <a href="#" class="sidebar-link">Welcome</a>
+                <a href="#" class="sidebar-link">How Ready Player Me works</a>
+                <a href="#" class="sidebar-link">FAQ</a>
             </div>
 
-            <div class="content">
-                <h1 class="page-title">Unreal Engine 5 samples</h1>
-                <p class="page-subtitle">Collection of code samples.</p>
+            <div class="sidebar-section">
+                <div class="sidebar-title">
+                    <span class="sidebar-icon">📚</span>
+                    INTEGRATION GUIDES
+                </div>
+                <a href="#" class="sidebar-link">Overview</a>
+                <a href="#" class="sidebar-link">Unity</a>
+                <a href="#" class="sidebar-link">Unreal Engine</a>
+                <a href="#" class="sidebar-link nested">Quickstart</a>
+                <a href="#" class="sidebar-link nested">Avatar Creator Integration</a>
+                <a href="#" class="sidebar-link nested">Load Avatars</a>
+                <a href="#" class="sidebar-link nested">Animations</a>
+                <a href="#" class="sidebar-link nested">Optimize</a>
+                <a href="#" class="sidebar-link nested">Code Samples</a>
+                <a href="#" class="sidebar-link nested-2 active">Unreal Engine 5 samples</a>
+                <a href="#" class="sidebar-link nested-2">Lyra project integration example</a>
+                <a href="#" class="sidebar-link nested-2">VR Avatars</a>
+                <a href="#" class="sidebar-link nested-2">Unreal Engine 4</a>
+                <a href="#" class="sidebar-link nested">Troubleshooting</a>
+                <a href="#" class="sidebar-link nested">Help us improve the Unreal Engine SDK</a>
+                <a href="#" class="sidebar-link nested">FAQ for Unreal Engine</a>
+            </div>
+        </aside>
 
-                <div class="content-block">
-                    <p>In the following GitHub repository, you can find examples of Ready Player Me integrations into an Unreal Engine 5 project.</p>
-                    <p><strong>Project:</strong> <a href="https://github.com/readyplayerme/UnrealExamples" class="content-link">GitHub Repository</a></p>
+        <!-- Main content -->
+        <main class="main-content">
+            <div class="breadcrumb">
+                <span class="sidebar-icon">📚</span>
+                <a href="#">INTEGRATION GUIDES</a>
+                <span class="breadcrumb-arrow">›</span>
+                <a href="#">UNREAL ENGINE</a>
+                <span class="breadcrumb-arrow">›</span>
+                <span>CODE SAMPLES</span>
+            </div>
+
+            <h1 class="page-title">Unreal Engine 5 samples</h1>
+            <p class="page-subtitle">Collection of code samples.</p>
+
+            <div class="content-block">
+                <p>In the following GitHub repository, you can find examples of Ready Player Me integrations into an Unreal Engine 5 project. Use this code as a reference for integrating Ready Player Me 3D avatars into your own Unreal Engine projects.</p>
+            </div>
+
+            <div class="content-block">
+                <p>For quick testing, you can also download the <a href="#">Windows Build</a>.</p>
+            </div>
+
+            <div class="content-block">
+                <p>Project: <a href="https://github.com/readyplayerme/UnrealExamples">https://github.com/readyplayerme/UnrealExamples</a></p>
+            </div>
+
+            <div class="content-block">
+                <p>Download and open the project in Unreal Engine.</p>
+            </div>
+
+            <div class="content-block">
+                <p>Inside the project (<code>Content › ReadyPlayerMe</code> folder) you can find examples for:</p>
+                <ul>
+                    <li>Animation retargeting</li>
+                    <li>Web Avatar Creator integration</li>
+                    <li>Custom Avatar Creator integration</li>
+                    <li>Multiplayer</li>
+                    <li>Facial tracking with Live Link</li>
+                    <li>In-engine Rendering</li>
+                    <li>Avatar Preloading</li>
+                    <li>Avatar Config setup</li>
+                </ul>
+            </div>
+
+            <a href="#" class="github-card">
+                <span class="github-icon">🌐</span>
+                <div class="github-info">
+                    <div class="github-title">GitHub - readyplayerme/UnrealExamples: ReadyPlayerMe integration into UE5 examples</div>
+                    <div class="github-subtitle">GitHub</div>
+                </div>
+                <span class="arrow-icon">›</span>
+            </a>
+
+            <div class="code-block">
+                <div class="code-toolbar">
+                    <div></div>
+                    <div class="code-actions">
+                        <span>🔍</span>
+                        <span>📋</span>
+                        <span>📎</span>
+                        <span>⭐</span>
+                    </div>
+                </div>
+                <div class="code-content">
+                    <img src="/api/placeholder/800/340" alt="Code example screenshot">
                 </div>
             </div>
         </main>
+
+        <!-- Feedback section -->
+        <div class="feedback-section">
+            <div class="feedback-title">Was this helpful?</div>
+            <div class="feedback-buttons">
+                <div class="feedback-button" data-reaction="thumbsup">👍</div>
+                <div class="feedback-button" data-reaction="thumbsdown">👎</div>
+                <div class="feedback-button" data-reaction="confused">🤔</div>
+            </div>
+        </div>
+
+        <!-- Theme toggle -->
+        <div class="theme-buttons">
+            <div class="theme-button" data-theme="light">🔆</div>
+            <div class="theme-button" data-theme="system">🖥️</div>
+            <div class="theme-button" data-theme="dark">🌙</div>
+        </div>
     </div>
 
-    <div class="theme-switcher">
-        <button class="theme-btn" id="toggle-dark-mode"><i class="fas fa-moon"></i></button>
-    </div>
-
-    <script>
-        document.getElementById("toggle-dark-mode").addEventListener("click", function() {
-            document.body.classList.toggle("dark");
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
